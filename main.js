@@ -8,6 +8,12 @@
   const dark = () => root.dataset.mode !== 'light';
   delete root.dataset.mode;                               // every visit opens dark; the toggle lasts for the visit
 
+  /* ---------- phones show the dashboard's phone layout: swap in the phone captures and recordings ---------- */
+  if (matchMedia('(max-width:760px)').matches) $$('[data-msrc]').forEach((el) => {
+    el.setAttribute('src', el.dataset.msrc); (el.closest('.reel') || el).classList.add('m'); el.removeAttribute('width'); el.removeAttribute('height');
+    if (el.dataset.mfast !== undefined) { if (el.dataset.mfast) el.dataset.fast = el.dataset.mfast; else delete el.dataset.fast; }
+  });
+
   /* ---------- recordings follow the colour mode and play only while on screen ---------- */
   const clips = $$('video[data-base]');
   const loadClip = (v) => {
