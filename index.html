@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PRISM · The Workspace for Investing</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Deep data and an AI analyst for every market you trade: company research, sector intelligence, alternative data and Spectra.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/logo_nav.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=193">
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top" aria-label="PRISM home">
+      <img src="assets/logo_nav.png" alt="" width="24" height="21">
+      <img class="wordmark" src="assets/wordmark.png" alt="PRISM" width="80" height="13">
+    </a>
+    <div class="nav-links">
+      <a href="#spectra">Spectra</a>
+      <a href="#context">Intelligence</a>
+      <a href="#tools">Dashboard</a>
+      <a href="#data">Data</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-end">
+      <button class="icon-btn" type="button" id="theme" aria-label="Switch colour mode">
+        <svg class="show-light" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="show-dark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="nav-signin" href="https://updated.prismxlabs.com/#signin">Sign In</a>
+      <a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Get Started for Free</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- ===== First screen: hero + market strip ===== -->
+<div class="first">
+  <!-- photos of Indian cities fade behind the hero; the map pin points to each one -->
+  <div class="hero-photos" id="hero-photos" aria-hidden="true"></div>
+  <p class="hero-place" id="hero-place" aria-hidden="true"><i></i><span></span></p>
+  <header class="hero">
+    <svg class="india" id="india" aria-hidden="true"></svg>
+    <svg class="india india-pin" id="india-pin" aria-hidden="true"></svg>
+    <div class="wrap hero-inner">
+      <h1>The Workspace for <span class="rotor" id="rotor">Investors</span></h1>
+      <p class="lede">Deep data and an AI analyst for every market you trade.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://updated.prismxlabs.com/#signin">Get Started for Free</a>
+        <a class="btn btn-quiet" href="https://calendly.com/contact-prismxlabs">Book a Demo</a>
+      </div>
+      <p class="trust">Free to start · No card needed</p>
+    </div>
+  </header>
+  <div class="coverage" id="coverage">
+    <div class="wrap">
+      <ul class="markets">
+        <li>Equities</li><li>Mutual Funds</li><li>ETFs &amp; Indices</li><li>Commodities</li><li>Futures &amp; Options</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Meet Spectra: a browser window, features as its tabs ===== -->
+<section id="spectra">
+  <div class="wrap">
+    <div class="head">
+      <h2>Meet <span class="dim" id="meet-word">Spectra</span></h2>
+      <p class="sub">It starts with an analyst of your own. Ask, monitor, trade, test your ideas and learn, all in plain language.</p>
+      <div class="disc"><button type="button" class="disc-btn" id="disc-btn" aria-expanded="false" aria-controls="disc-text"><i data-icon="shield-check"></i>Disclaimer</button><p class="disc-text" id="disc-text" hidden>Spectra's answers are AI generated and for information only. They are not investment advice.</p></div>
+    </div>
+    <div class="bw" data-show>
+      <div class="bw-bar">
+        <span class="bw-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="bw-tabs" role="tablist" aria-label="Spectra features"><button role="tab" id="t-ask" aria-controls="p-ask" aria-selected="true">Ask</button><button role="tab" id="t-monitor" aria-controls="p-monitor" aria-selected="false">Monitor</button><button role="tab" id="t-trade" aria-controls="p-trade" aria-selected="false">Trade</button><button role="tab" id="t-challenge" aria-controls="p-challenge" aria-selected="false">Challenge</button><button role="tab" id="t-explain" aria-controls="p-explain" aria-selected="false">Explain</button><button role="tab" id="t-learn" aria-controls="p-learn" aria-selected="false">Learn</button></div>
+      </div>
+      <div class="bw-body">
+        <div class="duo-panel" role="tabpanel" id="p-ask" aria-labelledby="t-ask">
+          <div class="bw-cap"><p>Screen companies or ask anything, with sources.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Try Spectra</a></div>
+          <div class="stage has-reel"><div class="reel"><video class="show-light" muted loop playsinline preload="metadata" src="assets/vid/ask-light.webm?v=6" aria-label="Spectra in PRISM: a question comparing Titan and Kalyan Jewellers is typed, Spectra works through it and answers with a table, a chart and what stands out"></video><video class="show-dark" muted loop playsinline preload="metadata" src="assets/vid/ask-dark.webm?v=6" aria-label="Spectra in PRISM: a question comparing Titan and Kalyan Jewellers is typed, Spectra works through it and answers with a table, a chart and what stands out"></video></div></div>
+        </div>
+        <div class="duo-panel" role="tabpanel" id="p-monitor" aria-labelledby="t-monitor" hidden>
+          <div class="bw-cap"><p>Describe a thesis. Get alerted when it moves.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Try Spectra</a></div>
+          <div class="stage has-reel"><div class="reel"><video class="show-light" muted loop playsinline preload="metadata" src="assets/vid/monitor-light.webm?v=4" aria-label="PRISM Monitors: a request is typed, Spectra works through the data and builds a live monitor, then shows it full screen"></video><video class="show-dark" muted loop playsinline preload="metadata" src="assets/vid/monitor-dark.webm?v=4" aria-label="PRISM Monitors: a request is typed, Spectra works through the data and builds a live monitor, then shows it full screen"></video></div></div>
+        </div>
+        <div class="duo-panel" role="tabpanel" id="p-trade" aria-labelledby="t-trade" hidden>
+          <div class="bw-cap"><p>Backtest an idea, then paper trade it.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Try Spectra</a></div>
+          <div class="stage has-reel"><div class="reel"><video class="show-light" muted loop playsinline preload="metadata" src="assets/vid/trade-light.webm?v=3" aria-label="PRISM Trading: a strategy is described in words and Spectra builds it block by block"></video><video class="show-dark" muted loop playsinline preload="metadata" src="assets/vid/trade-dark.webm?v=3" aria-label="PRISM Trading: a strategy is described in words and Spectra builds it block by block"></video></div></div>
+        </div>
+        <div class="duo-panel" role="tabpanel" id="p-challenge" aria-labelledby="t-challenge" hidden>
+          <div class="bw-cap"><p>Spectra argues the other side of your thesis.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Try Spectra</a></div>
+          <div class="stage has-reel"><div class="reel"><video class="show-light" muted loop playsinline preload="metadata" src="assets/vid/challenge-light.webm?v=6" aria-label="Spectra challenging a view on power stocks over two turns, with the demand and price data"></video><video class="show-dark" muted loop playsinline preload="metadata" src="assets/vid/challenge-dark.webm?v=6" aria-label="Spectra challenging a view on power stocks over two turns, with the demand and price data"></video></div></div>
+        </div>
+        <div class="duo-panel" role="tabpanel" id="p-explain" aria-labelledby="t-explain" hidden>
+          <div class="bw-cap"><p>Ask about the page you are on. Every answer cites its sources.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Try Spectra</a></div>
+          <div class="stage has-reel"><div class="reel"><video class="show-light" muted loop playsinline preload="metadata" src="assets/vid/explain-light.webm?v=5" aria-label="The Power and energy page in PRISM, with Spectra explaining the Electricity supplied chart and its source"></video><video class="show-dark" muted loop playsinline preload="metadata" src="assets/vid/explain-dark.webm?v=5" aria-label="The Power and energy page in PRISM, with Spectra explaining the Electricity supplied chart and its source"></video></div></div>
+        </div>
+        <div class="duo-panel" role="tabpanel" id="p-learn" aria-labelledby="t-learn" hidden>
+          <div class="bw-cap"><p>Learn as you go. Spectra explains any term or data series in plain language.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Try Spectra</a></div>
+          <div class="stage has-reel"><div class="reel"><video class="show-light" muted loop playsinline preload="metadata" src="assets/vid/learn-light.webm?v=6" aria-label="Spectra explaining what an e-way bill is, with a chart of the monthly count"></video><video class="show-dark" muted loop playsinline preload="metadata" src="assets/vid/learn-dark.webm?v=6" aria-label="Spectra explaining what an e-way bill is, with a chart of the monthly count"></video></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Intelligence: folder tabs ===== -->
+<section id="context">
+  <div class="wrap">
+    <div class="head">
+      <h2>The Context <span class="dim">Behind Chaos.</span></h2>
+      <p class="sub">In-depth intelligence, predictive models and proprietary indices, built on thousands of raw alternative data series.</p>
+    </div>
+    <div class="fd" data-show>
+      <div class="fd-tabs" role="tablist" aria-label="Intelligence"><button role="tab" id="t-intel" aria-controls="p-intel" aria-selected="true">Intelligence</button><button role="tab" id="t-alt" aria-controls="p-alt" aria-selected="false">Alternative Data</button><button role="tab" id="t-idx" aria-controls="p-idx" aria-selected="false">Indices &amp; Nowcasts</button></div>
+      <div class="fd-body">
+        <div class="duo-panel fd-panel" role="tabpanel" id="p-intel" aria-labelledby="t-intel">
+          <div class="fd-copy"><h3>Our goal is to put institutional intelligence in every investor's hands.</h3><p>Power, payments, agriculture, trade, geopolitics and more. Each theme tracks the signals that matter, explains what changed and shows the companies affected.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">See the Themes</a></div>
+          <div class="stage has-reel"><div class="reel" data-ms="2600,2800,2800,2800,2800"><img class="show-light on" data-f="1" src="assets/demos/intel-light-1.jpg?v=6" width="1440" height="900" loading="lazy" alt="PRISM Intelligence: a board of themes, each opening a preview of its overview page"><img class="show-light" data-f="2" src="assets/demos/intel-light-2.jpg?v=6" width="1440" height="900" loading="lazy" alt=""><img class="show-light" data-f="3" src="assets/demos/intel-light-3.jpg?v=6" width="1440" height="900" loading="lazy" alt=""><img class="show-light" data-f="4" src="assets/demos/intel-light-4.jpg?v=6" width="1440" height="900" loading="lazy" alt=""><img class="show-light" data-f="5" src="assets/demos/intel-light-5.jpg?v=6" width="1440" height="900" loading="lazy" alt=""><img class="show-dark on" data-f="1" src="assets/demos/intel-dark-1.jpg?v=6" width="1440" height="900" loading="lazy" alt="PRISM Intelligence: a board of themes, each opening a preview of its overview page"><img class="show-dark" data-f="2" src="assets/demos/intel-dark-2.jpg?v=6" width="1440" height="900" loading="lazy" alt=""><img class="show-dark" data-f="3" src="assets/demos/intel-dark-3.jpg?v=6" width="1440" height="900" loading="lazy" alt=""><img class="show-dark" data-f="4" src="assets/demos/intel-dark-4.jpg?v=6" width="1440" height="900" loading="lazy" alt=""><img class="show-dark" data-f="5" src="assets/demos/intel-dark-5.jpg?v=6" width="1440" height="900" loading="lazy" alt=""><span class="reel-dots" aria-hidden="true"><i class=on></i><i></i><i></i><i></i><i></i></span></div></div>
+        </div>
+        <div class="duo-panel fd-panel" role="tabpanel" id="p-alt" aria-labelledby="t-alt" hidden>
+          <div class="fd-copy"><h3>Know what's driving each sector.</h3><p>Thousands of real-economy series, each with its full history and source. Pull them through the API, or connect Claude and ChatGPT with MCP.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Explore the Data</a></div>
+          <div class="stage has-screen"><img class="snip screen show-light" src="assets/snips/altseries-light.jpg?v=5" width="970" height="853" loading="lazy" alt="A data series page in PRISM: India's monthly petroleum consumption, with growth by month, what it measures, key facts and its source"><img class="snip screen show-dark" src="assets/snips/altseries-dark.jpg?v=5" width="970" height="853" loading="lazy" alt="A data series page in PRISM: India's monthly petroleum consumption, with growth by month, what it measures, key facts and its source"></div>
+        </div>
+        <div class="duo-panel fd-panel" role="tabpanel" id="p-idx" aria-labelledby="t-idx" hidden>
+          <div class="fd-copy"><h3>See the quarter before it's reported.</h3><p>PRISM indices sum up risk appetite, growth and flows in one reading each. Nowcasts estimate company revenue and power generation while the quarter is still running.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">See the Indices</a></div>
+          <div class="stage has-screen"><img class="snip screen show-light" src="assets/snips/indices-light.jpg?v=8" width="970" height="717" loading="lazy" alt="The PRISM indices page: nine headline indices against their averages, revenue and power-generation nowcasts by company, and company indices"><img class="snip screen show-dark" src="assets/snips/indices-dark.jpg?v=8" width="970" height="717" loading="lazy" alt="The PRISM indices page: nine headline indices against their averages, revenue and power-generation nowcasts by company, and company indices"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Research basics: folder tabs, mirrored ===== -->
+<section id="tools">
+  <div class="wrap">
+    <div class="head">
+      <h2>All the Tools You Already Use. <span class="dim">In One Place.</span></h2>
+      <p class="sub">So you never need a second tool.</p>
+    </div>
+    <div class="fd fd-right" data-show>
+      <div class="fd-tabs" role="tablist" aria-label="Research basics"><button role="tab" id="t-company" aria-controls="p-company" aria-selected="true">Company</button><button role="tab" id="t-charts" aria-controls="p-charts" aria-selected="false">Charts</button><button role="tab" id="t-watch" aria-controls="p-watch" aria-selected="false">Watchlist</button><button role="tab" id="t-funds" aria-controls="p-funds" aria-selected="false">Mutual Funds</button><button role="tab" id="t-market" aria-controls="p-market" aria-selected="false">Markets</button><button role="tab" id="t-commod" aria-controls="p-commod" aria-selected="false">Commodities</button></div>
+      <div class="fd-body">
+        <div class="duo-panel fd-panel" role="tabpanel" id="p-company" aria-labelledby="t-company">
+          <div class="stage has-screen"><img class="snip screen show-light" src="assets/snips/u-company-light.jpg" width="800" height="436" loading="lazy" alt="The PRISM Company page: screener shortcuts, ownership and quality, shareholder lookup, group map, document hub and explainers"><img class="snip screen show-dark" src="assets/snips/u-company-dark.jpg" width="727" height="454" loading="lazy" alt="The PRISM Company page: screener shortcuts, ownership and quality, shareholder lookup, group map, document hub and explainers"></div>
+          <div class="fd-copy"><h3>The whole company on one page.</h3><p>Financials, news, shareholding and governance, filings and call explainers, with every subsidiary and brand mapped to its listed parent. Prices go back to 1996 and financials to 2002.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Open the Dashboard</a></div>
+        </div>
+        <div class="duo-panel fd-panel" role="tabpanel" id="p-charts" aria-labelledby="t-charts" hidden>
+          <div class="stage has-reel"><div class="reel"><video class="show-light" muted loop playsinline preload="metadata" data-fast="4.85,12.92,2.31" src="assets/vid/chart-light.webm?v=3" aria-label="A PRISM chart of Reliance: an indicator is described in words and Spectra adds it to the chart"></video><video class="show-dark" muted loop playsinline preload="metadata" data-fast="4.86,11.95,2.03" src="assets/vid/chart-dark.webm?v=3" aria-label="A PRISM chart of Reliance: an indicator is described in words and Spectra adds it to the chart"></video></div></div>
+          <div class="fd-copy"><h3>20 indicators built in. Ask Spectra for more.</h3><p>RSI, MACD, Bollinger, SuperTrend and the rest, with events, shareholding and bulk deals on the chart. Need something else? Describe it and Spectra builds the indicator.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Open the Dashboard</a></div>
+        </div>
+        <div class="duo-panel fd-panel" role="tabpanel" id="p-watch" aria-labelledby="t-watch" hidden>
+          <div class="stage has-screen"><img class="snip screen show-light" src="assets/snips/watch-light.jpg?v=5" width="970" height="798" loading="lazy" alt="The PRISM watchlist: prices and news for your companies, upcoming results, holdings, the morning digest and saved work"><img class="snip screen show-dark" src="assets/snips/watch-dark.jpg?v=5" width="970" height="798" loading="lazy" alt="The PRISM watchlist: prices and news for your companies, upcoming results, holdings, the morning digest and saved work"></div>
+          <div class="fd-copy"><h3>Your companies, on one list.</h3><p>Prices, the day's move and the latest headline for every company you follow, with results dates and a morning digest.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Open the Dashboard</a></div>
+        </div>
+        <div class="duo-panel fd-panel" role="tabpanel" id="p-funds" aria-labelledby="t-funds" hidden>
+          <div class="stage has-screen"><img class="snip screen show-light" src="assets/snips/funds-light.jpg?v=5" width="970" height="840" loading="lazy" alt="Mutual fund portfolios in PRISM: 42 fund houses, and the largest holdings of Motilal Oswal Mutual Fund"><img class="snip screen show-dark" src="assets/snips/funds-dark.jpg?v=5" width="970" height="840" loading="lazy" alt="Mutual fund portfolios in PRISM: 42 fund houses, and the largest holdings of Motilal Oswal Mutual Fund"></div>
+          <div class="fd-copy"><h3>See what the big funds hold.</h3><p>Mutual funds, foreign investors, insurers and sovereign funds: what each one holds, and every deal they make.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Open the Dashboard</a></div>
+        </div>
+        <div class="duo-panel fd-panel" role="tabpanel" id="p-market" aria-labelledby="t-market" hidden>
+          <div class="stage has-screen"><img class="snip screen show-light" src="assets/snips/market-light.jpg?v=5" width="970" height="605" loading="lazy" alt="The PRISM market page: index tiles, and the main indices with returns, breadth, trend and 52-week range"><img class="snip screen show-dark" src="assets/snips/market-dark.jpg?v=5" width="970" height="605" loading="lazy" alt="The PRISM market page: index tiles, and the main indices with returns, breadth, trend and 52-week range"></div>
+          <div class="fd-copy"><h3>The whole market on one screen.</h3><p>Indices, sectors, ETFs, bonds, currencies and commodities, through the session.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Open the Dashboard</a></div>
+        </div>
+        <div class="duo-panel fd-panel" role="tabpanel" id="p-commod" aria-labelledby="t-commod" hidden>
+          <div class="stage has-screen"><img class="snip screen show-light" src="assets/snips/commod-light-1.jpg?v=4" width="970" height="784" loading="lazy" alt="The PRISM commodities overview: nine commodities to browse, each with its price, three-month trend and day move, beside what stands out, mispricing, chokepoints and positioning extremes"><img class="snip screen show-dark" src="assets/snips/commod-dark-1.jpg?v=4" width="970" height="784" loading="lazy" alt="The PRISM commodities overview: nine commodities to browse, each with its price, three-month trend and day move, beside what stands out, mispricing, chokepoints and positioning extremes"></div>
+          <div class="fd-copy"><h3>Every commodity has its own page.</h3><p>Open crude, gold, copper or wheat for its prices, curve, positioning, trade and policy. Mispricing and shipping chokepoints sit on the same desk.</p><a class="btn btn-primary btn-sm" href="https://updated.prismxlabs.com/#signin">Open the Dashboard</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Data ===== -->
+<section id="data">
+  <div class="wrap">
+    <div class="head">
+      <h2>Great data <span class="dim">shouldn't be a privilege.</span></h2>
+      <p class="sub">Every source in one place: filings, prices, flows and the real economy. Cleaned, linked and kept current.</p>
+    </div>
+    <dl class="stats num">
+      <div><i data-icon="activity"></i><dd>2.5B+</dd><dt>Data points</dt></div>
+      <div><i data-icon="layers"></i><dd>149K+</dd><dt>Data series</dt></div>
+      <div><i data-icon="globe"></i><dd>360+</dd><dt>Sources</dt></div>
+      <div><i data-icon="book-open"></i><dd>25 years</dd><dt>Of company financials</dt></div>
+    </dl>
+  </div>
+  <div class="marquee" aria-label="Data in PRISM">
+    <div class="marquee-row" data-dir="left"><span class="tag"><span class="tag-badge c-blue"><i data-icon="chart-candlestick"></i></span>NSE &amp; BSE Prices</span><span class="tag"><span class="tag-badge c-indigo"><i data-icon="file-text"></i></span>Corporate Filings</span><span class="tag"><span class="tag-badge c-violet"><i data-icon="phone"></i></span>Earnings-Call Transcripts</span><span class="tag"><span class="tag-badge c-orange"><i data-icon="book-open"></i></span>Annual Reports</span><span class="tag"><span class="tag-badge c-teal"><i data-icon="chart-pie"></i></span>Shareholding Patterns</span><span class="tag"><span class="tag-badge c-rose"><i data-icon="user-check"></i></span>Insider Trades</span><span class="tag"><span class="tag-badge c-amber"><i data-icon="handshake"></i></span>Bulk &amp; Block Deals</span><span class="tag"><span class="tag-badge c-pink"><i data-icon="rocket"></i></span>IPO Prospectuses</span></div>
+    <div class="marquee-row" data-dir="right"><span class="tag"><span class="tag-badge c-indigo"><i data-icon="scale"></i></span>F&amp;O Participant Positions</span><span class="tag"><span class="tag-badge c-green"><i data-icon="wallet"></i></span>Mutual Fund NAVs</span><span class="tag"><span class="tag-badge c-sky"><i data-icon="globe"></i></span>FII &amp; DII Flows</span><span class="tag"><span class="tag-badge c-blue"><i data-icon="landmark"></i></span>RBI Rates &amp; Liquidity</span><span class="tag"><span class="tag-badge c-amber"><i data-icon="receipt"></i></span>GST Collections</span><span class="tag"><span class="tag-badge c-violet"><i data-icon="qr-code"></i></span>UPI Payments</span><span class="tag"><span class="tag-badge c-orange"><i data-icon="truck"></i></span>E-Way Bills</span><span class="tag"><span class="tag-badge c-teal"><i data-icon="percent"></i></span>Bond Yields</span></div>
+    <div class="marquee-row" data-dir="left"><span class="tag"><span class="tag-badge c-yellow"><i data-icon="zap"></i></span>Power Demand</span><span class="tag"><span class="tag-badge c-blue"><i data-icon="ship"></i></span>Port Cargo</span><span class="tag"><span class="tag-badge c-sky"><i data-icon="plane"></i></span>Aviation Traffic</span><span class="tag"><span class="tag-badge c-rose"><i data-icon="car"></i></span>Vehicle Registrations</span><span class="tag"><span class="tag-badge c-orange"><i data-icon="wheat"></i></span>Commodity Prices</span><span class="tag"><span class="tag-badge c-sky"><i data-icon="cloud-rain"></i></span>Monsoon &amp; Weather</span><span class="tag"><span class="tag-badge c-indigo"><i data-icon="clipboard-list"></i></span>Government Tenders</span><span class="tag"><span class="tag-badge c-green"><i data-icon="briefcase"></i></span>Hiring Trends</span><span class="tag"><span class="tag-badge c-blue"><i data-icon="newspaper"></i></span>News &amp; Policy</span><span class="tag"><span class="tag-badge c-pink"><i data-icon="message-circle"></i></span>Company Posts on X</span></div>
+  </div>
+</section>
+
+<!-- ===== Pricing ===== -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="head">
+      <h2>Plans for every <span class="dim">kind of investor.</span></h2>
+      <p class="sub">Start free. Upgrade when you want the full picture.</p>
+    </div>
+    <div class="plans three">
+      <article class="plan">
+        <div class="plan-top"><h3>Free</h3></div>
+        <p class="plan-for">For anyone starting out.</p>
+        <p class="plan-price num">₹0</p>
+        <ul class="ticks"><li><i data-icon="check"></i>Company data and financials</li><li><i data-icon="check"></i>Charting tools</li><li><i data-icon="check"></i>Market data and news</li><li><i data-icon="check"></i>Watchlist</li><li><i data-icon="check"></i>Spectra on the Flash model, with limited credits</li><li class="no"><i data-icon="x"></i>Alternative data, indices and intelligence</li><li class="no"><i data-icon="x"></i>Commodities and ETFs</li><li class="no"><i data-icon="x"></i>Monitors, alerts and morning digest</li><li class="no"><i data-icon="x"></i>Trading</li></ul>
+        <a class="btn btn-primary" href="https://updated.prismxlabs.com/#signin">Get Started for Free</a>
+      </article>
+      <article class="plan pick">
+        <div class="plan-top"><h3>Pro</h3><span class="badge">Recommended</span></div>
+        <p class="plan-for">For investors who research every week.</p>
+        <p class="plan-price num">₹2,499<small>/month</small></p>
+        <ul class="ticks"><li><i data-icon="check"></i>Everything in Free</li><li><i data-icon="check"></i>Advanced Spectra models, with more credits</li><li><i data-icon="check"></i>Alternative data, indices and nowcasts</li><li><i data-icon="check"></i>Commodities and ETFs</li><li><i data-icon="check"></i>Monitors, alerts and morning digest</li><li><i data-icon="check"></i>Trading: backtests and paper trading</li><li><i data-icon="check"></i>3 intelligence themes of your choice</li></ul>
+        <a class="btn btn-primary" href="https://updated.prismxlabs.com/#signin">Get Pro</a>
+      </article>
+      <article class="plan">
+        <div class="plan-top"><h3>Premium</h3></div>
+        <p class="plan-for">For full-time investors and professionals.</p>
+        <p class="plan-price num">₹9,999<small>/month</small></p>
+        <ul class="ticks"><li><i data-icon="check"></i>Everything in Pro</li><li><i data-icon="check"></i>All 14 intelligence themes</li><li><i data-icon="check"></i>The most Spectra credits</li><li><i data-icon="check"></i>Priority on your requests</li></ul>
+        <a class="btn btn-primary" href="https://updated.prismxlabs.com/#signin">Get Premium</a>
+      </article>
+    </div>
+    <p class="foot-note">Prices are per month, in rupees. Plans and credits may change before launch.</p>
+  </div>
+</section>
+
+<!-- ===== FAQ: Spectra answers ===== -->
+<section id="faq">
+  <div class="wrap">
+    <div class="head">
+      <h2>Questions, <span class="dim">answered.</span></h2>
+      <p class="sub">Pick a question and Spectra will answer.</p>
+    </div>
+    <div class="faq-chat">
+      <ul class="faq-list" aria-label="Questions">
+        <li><button type="button" class="fq" aria-pressed="true">What's inside PRISM?</button><div class="fa" hidden><ul class="cats"><li>Market data</li><li>Company data</li><li>News data</li><li>Alternative data</li><li>Indices</li><li>Thematic intelligence</li><li>Charting tools</li><li>Call and event explainers</li><li>And a lot more</li></ul></div></li>
+        <li><button type="button" class="fq" aria-pressed="false">Where does the data come from?</button><div class="fa" hidden><p>From more than 360 sources: exchange prices and filings, government and regulator releases, and alternative data such as power demand, hiring and app rankings. Every series shows where it comes from, how far back it goes and how often it updates.</p></div></li>
+        <li><button type="button" class="fq" aria-pressed="false">Can PRISM trade for me?</button><div class="fa" hidden><p>Not today. You can turn an idea into a strategy, test it on Indian market history and follow it with paper trading, but no real money moves yet. We're working towards it, and hopefully that reality isn't too far away.</p></div></li>
+        <li><button type="button" class="fq" aria-pressed="false">Why should I trust the answers?</button><div class="fa" hidden><p>You don't have to: you can check. Every answer links back to the filing, dataset or document it came from, and when data is thin or stale, PRISM says so.</p></div></li>
+        <li><button type="button" class="fq" aria-pressed="false">Is PRISM investment advice?</button><div class="fa" hidden><p>No. PRISM is a research and analytics platform. It shows you data and where it came from; it doesn't tell you what to buy or sell, and it isn't registered with SEBI as an investment adviser.</p></div></li>
+      </ul>
+      <div class="spx">
+        <div class="spx-bar"><span><i data-icon="sparkles"></i>Spectra</span></div>
+        <div class="spx-body" id="faq-body" aria-live="polite"></div>
+        <div class="spx-try" aria-label="Sample questions"><button type="button" class="spx-chip">Is HDFC Bank cheap against its own history?</button><button type="button" class="spx-chip">Which funds added Eternal last month?</button><button type="button" class="spx-chip">Compare TCS and Infosys margins</button></div>
+        <a class="spx-input" id="spx-ask" href="https://updated.prismxlabs.com/#signin"><span>Ask Spectra about any stock…</span><b>Get Started for Free</b></a>
+      </div>
+    </div>
+    <p class="foot-note">Can't find yours? Email <span class="sel">contact@prismxlabs.com</span></p>
+  </div>
+</section>
+
+<!-- ===== Closing ===== -->
+<section class="closing" id="join">
+  <div class="wrap">
+    <h2>Investing is evolving. <span class="dim">We're building what comes next.</span></h2>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://updated.prismxlabs.com/#signin">Get Started for Free</a>
+      <a class="btn btn-quiet" href="https://calendly.com/contact-prismxlabs">Book a Demo</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <div class="foot-links">
+      <a class="brand" href="#top" aria-label="PRISM home"><img src="assets/logo_nav.png" alt="" width="20" height="18"><img class="wordmark" src="assets/wordmark.png" alt="PRISM" width="70" height="11"></a>
+      <a href="https://prismxlabs.com/careers.html">Careers</a><a href="https://prismxlabs.com/terms.html">Terms</a><a href="https://prismxlabs.com/privacy.html">Privacy</a><span class="sel">contact@prismxlabs.com</span>
+    </div>
+    <p>PRISM is a research and analytics platform and does not provide investment advice or recommendations. Investments in securities are subject to market risks. PRISM X Labs Pvt Ltd · Mumbai</p>
+  </div>
+</footer>
+
+<!-- ===== Side pop-up: alerts & daily digest ===== -->
+<div class="digest">
+  <div class="digest-panel" id="digest-panel" hidden>
+    <div class="dp-head"><b>What PRISM Sends You</b><button type="button" id="digest-close" aria-label="Close">×</button></div>
+    <div class="seg" role="tablist" aria-label="Message type">
+      <button role="tab" aria-selected="true" data-d="digest">Morning Digest</button>
+      <button role="tab" aria-selected="false" data-d="wa">WhatsApp Alerts</button>
+    </div>
+    <div class="dp-card" data-dv="digest">
+      <p class="dp-meta">PRISM · 8:30 AM · Sample</p>
+      <p><b>Good morning. 3 things for today</b></p>
+      <ol><li>A watchlist company reports results after close</li><li>Your UPI-growth monitor triggered yesterday</li><li>New UPI payments data is in</li></ol>
+    </div>
+    <div class="dp-card" data-dv="wa" hidden>
+      <p class="dp-meta">WhatsApp · PRISM · Sample</p>
+      <p class="bubble">UPI volumes for October: 25,467 mn, up 23.0% on a year ago. Linked stocks in your monitor: PAYTM, HDFCBANK.</p>
+    </div>
+    <a class="btn btn-primary btn-sm full" href="https://updated.prismxlabs.com/#signin">Get Started for Free</a>
+  </div>
+  <button type="button" class="digest-btn" id="digest-btn" aria-expanded="false" aria-controls="digest-panel"><i></i>Alerts<span class="wide"> &amp; Daily Digest</span></button>
+</div>
+
+<script src="icons.js?v=1"></script>
+<script src="india-dots.js?v=1"></script>
+<script src="india-states.js?v=1"></script>
+<script src="main.js?v=95"></script>
+</body>
+</html>
