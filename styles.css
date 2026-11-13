@@ -764,3 +764,11 @@ h2{font-size:clamp(24px,2.8vw,36px);line-height:1.12}
   .india{display:none !important}
   .hero{justify-content:center;padding-top:48px;padding-bottom:48px}
 }
+
+/* Phones: screens and demos keep a readable size and scroll sideways inside their frame, instead of shrinking to fit. */
+@media (max-width:760px){
+  .stage.has-screen,.stage.has-reel{overflow-x:auto;justify-content:flex-start !important;padding:12px !important;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
+  .stage.has-screen::-webkit-scrollbar,.stage.has-reel::-webkit-scrollbar{display:none}
+  .stage .snip.screen{width:660px !important;max-width:none !important;flex:0 0 auto}
+  .stage.has-reel .reel{width:660px !important;max-width:none !important;flex:0 0 auto}
+}
