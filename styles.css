@@ -765,10 +765,14 @@ h2{font-size:clamp(24px,2.8vw,36px);line-height:1.12}
   .hero{justify-content:center;padding-top:48px;padding-bottom:48px}
 }
 
-/* Phones: screens and demos keep a readable size and scroll sideways inside their frame, instead of shrinking to fit. */
+/* Phones: each screen fills its frame zoomed in on the part that matters; nothing scrolls sideways. */
 @media (max-width:760px){
-  .stage.has-screen,.stage.has-reel{overflow-x:auto;justify-content:flex-start !important;padding:12px !important;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
-  .stage.has-screen::-webkit-scrollbar,.stage.has-reel::-webkit-scrollbar{display:none}
-  .stage .snip.screen{width:660px !important;max-width:none !important;flex:0 0 auto}
-  .stage.has-reel .reel{width:660px !important;max-width:none !important;flex:0 0 auto}
+  .stage.has-screen,.stage.has-reel{padding:10px !important;overflow:hidden;height:auto !important;min-height:0 !important}
+  .stage .snip.screen{width:100% !important;max-width:100% !important;aspect-ratio:4/5;height:auto;object-fit:cover;object-position:left top}
+  .stage.has-reel .reel{width:100% !important;max-width:none !important;aspect-ratio:1/1}
+  .reel img{object-position:center top}
+  .reel video{object-position:var(--fx,57%) center}
+  #p-explain,#p-charts{--fx:100%}
+  #p-monitor{--fx:62%}
+  #p-intel .reel{aspect-ratio:4/5}
 }
