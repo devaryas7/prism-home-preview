@@ -6,7 +6,7 @@
 
   /* ---------- colour mode: dark by default, the toggle switches to light ---------- */
   const dark = () => root.dataset.mode !== 'light';
-  try { const t = localStorage.getItem('prism-mode'); if (t) root.dataset.mode = t; } catch (e) {}
+  delete root.dataset.mode;                               // every visit opens dark; the toggle lasts for the visit
 
   /* ---------- recordings follow the colour mode and play only while on screen ---------- */
   const clips = $$('video[data-base]');
